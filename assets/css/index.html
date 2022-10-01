@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
     <a class="navbar-brand latitude heading_text" href="index.html"><b>Latitude</b></a>
@@ -32,6 +31,110 @@
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false">
+            Plots
+          </a>
+           <div
+             class="dropdown-menu"
+             aria-labelledby="navbarDropdownMenuLink">
+             <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+             <a class="dropdown-item" href="humidity.html">Humidity</a>
+             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+           </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="comparison_index.html"
+            >Comparison <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="data_index.html">Data</a>
+        </li>
+      </ul>
+  </nav>
+    <!-- End of navbar  -->
+
+    <!-- Create card for summary of this project  -->
+    <div class="row background">
+      <div class="col-md-4 col-lg-8 card-padding">
+        <div class="card">
+          <div class="card-body">
+           <h5><b>Summary: Latitude vs. X</b></h5>
+           <hr />
+           
+           <img
+            class="card-img-summary"
+            src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig1.png?raw=true"
+            alt="Max Temperature" 
+           />
+           <span>
+           <p>
+            The purpose of this project was to analyze how weather changes as you get closer to the equator.
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+           </p>  
+           <p> 
+            After assembling this dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. The site provides the source data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
+           </p>
+          </span>
+          </div>
+        </div>
+      </div>
+      <!-- End of summary project  -->
+
+      <!-- Create card to hold vizualization images -->
+      <div class="col-md-2 col-lg-4 card-padding">
+        <div class="card">
+          <h4><b>Visualizations</b></h4>
+          <hr />
+          <div class="row">
+            <div class="col-sm-3 col-md-6">
+              <a href="max_temp.html">
+                <img
+                class="img-fluid"
+                src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig1.png?raw=true"
+                alt="Max Temperature"
+                />
+              </a>  
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="humidity.html">
+               <img
+                 class="img-fluid"
+                 src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig2.png?raw=true"
+                 alt="Humidity"
+               />
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="cloudiness.html">
+                <img
+                  class="img-fluid"
+                  src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig3.png?raw=true"
+                  alt="Cloudiness"
+                />
+               </a>
+            </div>
+
+            <div class="col-sm-3 col-md-6">
+              <a href="windspeed.html">
+                <img
+                  class="img-fluid"
+                  src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig4.png?raw=true"
+                  alt="Wind Speed"
+                />
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<footer>
+  © Copyright Samantha Seng
+</footer>
+</html>
+
 <!-- <body>
     <div class="container">
         <nav class="navbar">
@@ -49,7 +152,7 @@
               <a href="#">Data</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
         <header class="header">
           <h3>Latitude</h3><br><br>
           <h1>Summary: Latitude vs. X</h1>
@@ -71,4 +174,4 @@
     </body>
     
     </html>
-    
+     -->
