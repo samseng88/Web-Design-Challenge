@@ -4,13 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+
+ <!-- import js and css style sheet  -->
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+  crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+  crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+  crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+  crossorigin="anonymous">
+</script>
+
+<link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 
 <!--Navigation Bar-->
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
-    <a class="navbar-brand latitude heading_text" href="index.html"><b>Latitude</b></a>
+    <a class="navbar-brand latitude heading_text" 
+    href="index.html"><b>Latitude</b></a>
     <button
       class="navbar-toggler"
       type="button"
@@ -18,8 +41,7 @@
       data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown"
       aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon "></span>
     </button>
     <div class="collapse navbar-collapse nav-left" id="navbarNavDropdown">
@@ -44,18 +66,18 @@
            </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="comparison_index.html"
+          <a class="nav-link" href="assets/css/comparisons_index.html"
             >Comparison <span class="sr-only">(current)</span></a
           >
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="data_index.html">Data</a>
+          <a class="nav-link" href="Resources/api_cities.csv">Data</a>
         </li>
       </ul>
   </nav>
     <!-- End of navbar  -->
 
-    <!-- Summary of Project  -->
+    <!------ Summary ----->
     <div class="row background">
       <div class="col-md-4 col-lg-8 card-padding">
         <div class="card">
@@ -65,7 +87,7 @@
            
            <img
             class="card-img-summary"
-            src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig1.png?raw=true"
+            src="assets/css/assets/css/Resources/Fig1 copy.png"
             alt="Max Temperature" 
            />
            <span>
@@ -74,16 +96,16 @@
             For this analysis, I used data from the Python-API Challenge and assemble the dataset on over 500 cities.
            </p>  
            <p> 
-            After assembling this dataset, I used Matplotlib to plot various aspects of the weather vs. latitude. 
-            Aside from laitutde I studied: temperature, cloudiness, wind speed, and humidity. This website provides my visualizations and findings from my previous project.
+            After assembling the dataset, I used Matplotlib to plot the weather vs. latitude. 
+            Aside from laitutde I studied: temperature, cloudiness, wind speed, and humidity. This website provides my visualizations and findings.
            </p>
           </span>
           </div>
         </div>
       </div>
-      <!-- End of summary project  -->
+      <!----- End of summary ----->
 
-      <!-- Body and Summary -->
+      <!------ Visualizations and graphs ------->
       <div class="col-md-2 col-lg-4 card-padding">
         <div class="card">
           <h4><b>Visualizations</b></h4>
@@ -93,7 +115,7 @@
               <a href="max_temp.html">
                 <img
                 class="img-fluid"
-                src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig1.png?raw=true"
+                src="Resources/Fig1.png"
                 alt="Max Temperature"
                 />
               </a>  
@@ -102,7 +124,7 @@
               <a href="humidity.html">
                <img
                  class="img-fluid"
-                 src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig2.png?raw=true"
+                 src="Resources/Fig2.png"
                  alt="Humidity"
                />
               </a>
@@ -111,7 +133,7 @@
               <a href="cloudiness.html">
                 <img
                   class="img-fluid"
-                  src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig3.png?raw=true"
+                  src="Resources/Fig3.png"
                   alt="Cloudiness"
                 />
                </a>
@@ -121,7 +143,7 @@
               <a href="windspeed.html">
                 <img
                   class="img-fluid"
-                  src="https://github.com/samseng88/python-api-challenge/blob/main/output_data/Fig4.png?raw=true"
+                  src="Resources/Fig4.png"
                   alt="Wind Speed"
                 />
                </a>
@@ -131,7 +153,5 @@
       </div>
     </div>
 </body>
-<footer>
-  © Copyright Samantha Seng
-</footer>
+
 </html>
