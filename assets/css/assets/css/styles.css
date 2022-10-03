@@ -27,7 +27,7 @@ listed here, please remove it from css styles---- */
 }
 
 .nav-left {
-  padding-right: 4rem;
+  padding-right: 2rem;
 }
 
 .nav-right {
@@ -107,6 +107,12 @@ footer {
   border-top-width: 5px;
 }
 
+img {
+  max-width:90%;
+  height:auto;
+  object-fit: contain;
+}
+
 .img-viz{
   border-style: solid;
   border-color: #008080;
@@ -117,7 +123,7 @@ footer {
   margin: 0rem 3rem 2rem 3rem;
 
 }
-@media (max-width: 990px) {
+@media (max-width: 767px) {
   .navbar-expand-lg { 
     background-color: #008080 !important;
   }
