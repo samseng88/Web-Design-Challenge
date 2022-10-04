@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8" />
-    <title>Bootstrap Visualization</title>
+    <title>Bootstrap Visualization Dataset</title>
 
     <!-- import js and css style sheet  -->
 <link rel="stylesheet" 
@@ -26,7 +26,7 @@ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07j
 crossorigin="anonymous">
 </script>
 
-<link rel="stylesheet" href="assets/css/styles.css"/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 
  <!-- Create navbar  -->
@@ -67,7 +67,7 @@ crossorigin="anonymous">
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="comparisons.html"
-              >Comparison <span class="sr-only">(current)</span></a
+              >Comparisons <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
@@ -81,18 +81,18 @@ crossorigin="anonymous">
         <div class="row background">
           <div class="col-md-4 col-lg-8 card-padding">
             <div class="card">
-              <h5><b>Cloudiness</b></h5>
+              <h5><b>Wind Speed(mph)</b></h5>
               <hr />
               <img
                 class="card-img-top"
-                src="Resources/Lat vs Cloudiness.png"
-                alt="Cloudiness"
+                src="Resources/Lat vs. Wind Speed (mph).png"
+                alt="Wind Speed"
               />
               <div class="card-body">
                 <p class="card-text">
-                  Based on the graph above there is no strong correlation between latitude and cloudiness. 
-                  The data is scattered throughout the graph and all over the place.
-
+                  Regions near the equator have by low wind speed and mid-latitudes experience much faster airflow and windspeed. 
+                  This is because warm equatorial air rises higher into the atmosphere and migrates toward the poles. 
+                  Cooler and denser air moves over Earth's surface toward the Equator to replace the heated air.
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ crossorigin="anonymous">
         <div class="col-sm-3 col-md-6">
           <a href="cloudiness.html">
             <img
-              class="img-fluid img-viz"
+              class="img-fluid"
               src="Resources/Lat vs Cloudiness.png"
               alt="Cloudiness"
             />
@@ -135,7 +135,7 @@ crossorigin="anonymous">
         <div class="col-sm-3 col-md-6">
           <a href="windspeed.html">
             <img
-              class="img-fluid"
+              class="img-fluid img-viz"
               src="Resources/Lat vs. Wind Speed (mph).png"
               alt="Wind Speed"
             />
