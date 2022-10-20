@@ -1,6 +1,4 @@
-/* ----Base styling.  Comments are suggestions, feel free to add more. if you don't use one of the ones 
-listed here, please remove it from css styles---- */
-
+/* ----Base styling---- */
 /* ----NAV START---- */
 .description-content {
     margin-top: 30px;
@@ -150,15 +148,6 @@ img {
 
   .card-padding-2 {
     padding: 3 0;
-
+  
+  
   }
-/* ----FOOTER START---- */
-.footer {
-/* Positioning */
-
-
-/* Box-model */
-
-/* Visual */
-
-}
